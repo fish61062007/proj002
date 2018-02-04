@@ -41,18 +41,19 @@ class SignIn: UIViewController {
                 
                 let userDefaults = UserDefaults.standard
                 userDefaults.set(true, forKey: "isLogined")
-                
                 userDefaults.synchronize()
+                dismiss(animated: true, completion:nil)
                 
+//                let alertController = UIAlertController(title: "Success",message: "You have seccessfully loged in.",preferredStyle: .alert)
+//                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: {(UIAlertAction) in
+//
+//                    let logInSuccess = self.storyboard?.instantiateViewController(withIdentifier: "TabBar")
+//                    self.present(logInSuccess!, animated: true, completion: nil)
+//                })
+//
+//                alertController.addAction(defaultAction)
+//                present(alertController, animated: true, completion: nil)
                 
-                let alertController = UIAlertController(title: "Success",message: "You have seccessfully loged in.",preferredStyle: .alert)
-                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: {(UIAlertAction) in
-                    let logInSuccess = self.storyboard?.instantiateViewController(withIdentifier: "TabBar")
-                    self.present(logInSuccess!, animated: true, completion: nil)
-                })
-                
-                alertController.addAction(defaultAction)
-                present(alertController, animated: true, completion: nil)
             }else{
                 let alertController = UIAlertController(title: "ERROR",message: "Wrong email or password.",preferredStyle: .alert)
                 let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
