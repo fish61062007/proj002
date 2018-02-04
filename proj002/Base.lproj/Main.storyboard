@@ -189,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9iO-0y-w4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-396" y="2083"/>
+            <point key="canvasLocation" x="210" y="1831"/>
         </scene>
         <!--Item-->
         <scene sceneID="ZAU-QJ-ViJ">
@@ -253,7 +253,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ya0-wX-sI6">
-                                <rect key="frame" x="61" y="508" width="148" height="98"/>
+                                <rect key="frame" x="0.0" y="569" width="305" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="我要報名"/>
@@ -262,23 +262,34 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbP-Mf-vwo">
-                                <rect key="frame" x="244" y="542" width="46" height="30"/>
+                                <rect key="frame" x="308" y="569" width="67" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="取消"/>
                                 <connections>
                                     <segue destination="KgQ-21-ckN" kind="unwind" unwindAction="backToEventHomeWithSegue:" id="ZrU-YS-jsb"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23w-MF-wC9">
+                                <rect key="frame" x="0.0" y="64" width="375" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Lhb-4Q-mNp"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="R0Z-Mx-SOX"/>
+                    <connections>
+                        <outlet property="detail01" destination="23w-MF-wC9" id="K8j-OO-Pzb"/>
+                        <outlet property="eventTitle" destination="R0Z-Mx-SOX" id="Qgc-b8-rSf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4B6-8K-vuv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="KgQ-21-ckN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="1010"/>
+            <point key="canvasLocation" x="1037.5999999999999" y="1009.7451274362819"/>
         </scene>
         <!--Tab Bar-->
         <scene sceneID="qqJ-JI-AmI">
@@ -600,40 +611,6 @@
                 <exit id="aVh-bl-jMT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3582" y="1019"/>
-        </scene>
-        <!--Success Signup-->
-        <scene sceneID="eRg-ST-GEh">
-            <objects>
-                <viewController id="xwI-lm-NhZ" customClass="SuccessSignup" customModule="proj002" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Yg4-5G-h9m">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="報名成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDW-cu-cgu">
-                                <rect key="frame" x="124" y="75" width="126" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gp9-pj-0mn">
-                                <rect key="frame" x="130" y="500" width="114" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="回主頁"/>
-                                <connections>
-                                    <segue destination="YG8-Po-rA8" kind="unwind" unwindAction="backHomeWithSegue:" id="8YO-6d-fta"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="BPx-iO-S8J"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dRv-aS-sic" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="YG8-Po-rA8" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="3788" y="994"/>
         </scene>
     </scenes>
 </document>

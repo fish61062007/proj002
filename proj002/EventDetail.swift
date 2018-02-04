@@ -10,10 +10,20 @@ import UIKit
 
 class EventDetail: UIViewController {
     
-
+    
+    @IBOutlet weak var eventTitle: UINavigationItem!
+    @IBOutlet weak var detail01: UILabel!
+    
+    var titleText:String?
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        eventTitle.title = "活動詳情"
+        
+        
+        
         // Do any additional setup after loading the view.
     }
 
