@@ -10,8 +10,8 @@ import UIKit
 
 class RegistrationRecordViewController: UIViewController,UIPickerViewDataSource, UIPickerViewDelegate {
     
+
     @IBOutlet weak var RecordCategory: UIPickerView!
-    
     let category = ["成功","失敗","已結束"]
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
