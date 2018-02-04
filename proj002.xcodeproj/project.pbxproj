@@ -19,6 +19,8 @@
 		2255977F2026CE1F00047CC4 /* ChooseSchool01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255977E2026CE1F00047CC4 /* ChooseSchool01.swift */; };
 		225597812026CE2C00047CC4 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225597802026CE2C00047CC4 /* SignIn.swift */; };
 		225597872026CEB000047CC4 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225597862026CEB000047CC4 /* TabBar.swift */; };
+		52230F1D2026DC2A0018F99E /* Sign1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52230F1C2026DC2A0018F99E /* Sign1ViewController.swift */; };
+		52230F1F2026DC350018F99E /* Sign2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52230F1E2026DC350018F99E /* Sign2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		2255977E2026CE1F00047CC4 /* ChooseSchool01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSchool01.swift; sourceTree = "<group>"; };
 		225597802026CE2C00047CC4 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		225597862026CEB000047CC4 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		52230F1C2026DC2A0018F99E /* Sign1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign1ViewController.swift; sourceTree = "<group>"; };
+		52230F1E2026DC350018F99E /* Sign2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				225597802026CE2C00047CC4 /* SignIn.swift */,
 				225597862026CEB000047CC4 /* TabBar.swift */,
 				225597532026CD7300047CC4 /* Assets.xcassets */,
+				52230F1C2026DC2A0018F99E /* Sign1ViewController.swift */,
+				52230F1E2026DC350018F99E /* Sign2ViewController.swift */,
 				225597552026CD7300047CC4 /* LaunchScreen.storyboard */,
 				225597582026CD7300047CC4 /* Info.plist */,
 			);
@@ -279,7 +285,9 @@
 				2255977B2026CDFC00047CC4 /* EventHome.swift in Sources */,
 				2255977F2026CE1F00047CC4 /* ChooseSchool01.swift in Sources */,
 				2255977D2026CE0F00047CC4 /* ChooseSchool.swift in Sources */,
+				52230F1D2026DC2A0018F99E /* Sign1ViewController.swift in Sources */,
 				2255974D2026CD7300047CC4 /* AppDelegate.swift in Sources */,
+				52230F1F2026DC350018F99E /* Sign2ViewController.swift in Sources */,
 				225597872026CEB000047CC4 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
