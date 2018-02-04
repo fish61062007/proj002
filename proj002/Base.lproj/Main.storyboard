@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kCc-2p-Lq8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QSi-nk-X1L">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -194,19 +194,19 @@
         <!--Item-->
         <scene sceneID="ZAU-QJ-ViJ">
             <objects>
-                <navigationController id="D2R-qc-Unt" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="EventDetailNavi" id="D2R-qc-Unt" customClass="EventDetailNavi" customModule="proj002" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="5Vo-mE-xpY"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1ZT-aX-2fV">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="9QD-mN-EW6" kind="relationship" relationship="rootViewController" id="Vlp-av-I5k"/>
+                        <segue destination="kCc-2p-Lq8" kind="relationship" relationship="rootViewController" id="HcX-n9-SQi"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sW1-nd-FUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-545" y="1010"/>
+            <point key="canvasLocation" x="286" y="1010"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="mT3-1U-61l">
@@ -242,18 +242,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SyM-0D-yaZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="293.60000000000002" y="1009.7451274362819"/>
+            <point key="canvasLocation" x="-550" y="1010"/>
         </scene>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="OoQ-Ha-oo9">
             <objects>
-                <viewController id="kCc-2p-Lq8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EventDetail" id="kCc-2p-Lq8" customClass="EventDetail" customModule="proj002" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Zd-fr-gbs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ya0-wX-sI6">
-                                <rect key="frame" x="113" y="508" width="148" height="98"/>
+                                <rect key="frame" x="61" y="508" width="148" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="我要報名"/>
@@ -261,14 +261,24 @@
                                     <segue destination="mSV-6z-zAy" kind="show" id="OEW-Gl-PKZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbP-Mf-vwo">
+                                <rect key="frame" x="244" y="542" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="取消"/>
+                                <connections>
+                                    <segue destination="KgQ-21-ckN" kind="unwind" unwindAction="backToEventHomeWithSegue:" id="ZrU-YS-jsb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Lhb-4Q-mNp"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="R0Z-Mx-SOX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4B6-8K-vuv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="KgQ-21-ckN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1032.8" y="1018.7406296851575"/>
+            <point key="canvasLocation" x="1038" y="1010"/>
         </scene>
         <!--Tab Bar-->
         <scene sceneID="qqJ-JI-AmI">
@@ -280,7 +290,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="D2R-qc-Unt" kind="relationship" relationship="viewControllers" id="icw-v4-ThD"/>
+                        <segue destination="9QD-mN-EW6" kind="relationship" relationship="viewControllers" id="uH9-je-JfN"/>
                         <segue destination="JLw-Z7-Q3Y" kind="relationship" relationship="viewControllers" id="dkA-8x-Mdh"/>
                     </connections>
                 </tabBarController>
@@ -351,7 +361,7 @@
         <!--Sign1 View Controller-->
         <scene sceneID="NI2-4e-eBV">
             <objects>
-                <viewController id="mSV-6z-zAy" customClass="Sign1ViewController" customModule="proj001" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mSV-6z-zAy" customClass="Sign1ViewController" customModule="proj002" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JYw-rd-41C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -455,7 +465,7 @@
         <!--Sign2 View Controller-->
         <scene sceneID="wAK-ro-UPQ">
             <objects>
-                <viewController id="ISh-sQ-vFf" customClass="Sign2ViewController" customModule="proj001" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ISh-sQ-vFf" customClass="Sign2ViewController" customModule="proj002" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y87-cl-kB5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -560,7 +570,7 @@
         <!--Success Signup-->
         <scene sceneID="8Ha-WB-Kii">
             <objects>
-                <viewController id="h8Q-g6-o2Q" customClass="SuccessSignup" customModule="proj001" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="h8Q-g6-o2Q" customClass="SuccessSignup" customModule="proj002" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yHO-so-hG0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -594,7 +604,7 @@
         <!--Success Signup-->
         <scene sceneID="eRg-ST-GEh">
             <objects>
-                <viewController id="xwI-lm-NhZ" customClass="SuccessSignup" customModule="proj001" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xwI-lm-NhZ" customClass="SuccessSignup" customModule="proj002" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yg4-5G-h9m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

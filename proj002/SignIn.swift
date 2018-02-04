@@ -39,10 +39,18 @@ class SignIn: UIViewController {
         }else {
             if checkAccount() {
                 
-                let userDefaults = UserDefaults.standard
-                userDefaults.set(true, forKey: "isLogined")
-                userDefaults.synchronize()
-                dismiss(animated: true, completion:nil)
+                let logInSuccess = storyboard?.instantiateViewController(withIdentifier: "TabBar")
+                present(logInSuccess!, animated: true, completion: nil)
+                
+//                let userDefaults = UserDefaults.standard
+//                userDefaults.set(true, forKey: "isLogined")
+//                userDefaults.synchronize()
+//
+//                let userDefaults2 = UserDefaults.standard
+//                userDefaults2.set(true, forKey: "isLogined")
+//                userDefaults2.synchronize()
+//
+//                dismiss(animated: true, completion: nil)
                 
 //                let alertController = UIAlertController(title: "Success",message: "You have seccessfully loged in.",preferredStyle: .alert)
 //                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: {(UIAlertAction) in

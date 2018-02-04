@@ -39,11 +39,11 @@ class ChooseSchool01: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
         pickedSchool = data?[row]
     }
     
+
+        
+    
     @IBAction func okButton(_ sender: Any) {
         let eventTrue = storyboard?.instantiateViewController(withIdentifier: "TabBar")
-        if pickedSchool == "05"{
-            
-        }
         present(eventTrue!, animated: true, completion: nil)
     }
     

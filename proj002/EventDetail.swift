@@ -1,5 +1,5 @@
 //
-//  TabBar.swift
+//  EventDetail.swift
 //  proj002
 //
 //  Created by utaipei on 2018/2/4.
@@ -8,23 +8,9 @@
 
 import UIKit
 
-class TabBar: UITabBarController {
-
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        
-//        let userDefaults = UserDefaults.standard
-//        let isLogined = userDefaults.value(forKey: "IsLogined") as? Bool
-//        
-//        if isLogined != nil && isLogined!{
-//            
-//        }else {
-//            let logVC = storyboard?.instantiateViewController(withIdentifier: "home")
-//            present(logVC!, animated: true, completion: nil)
-//        }
-//        
-//    }
+class EventDetail: UIViewController {
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
