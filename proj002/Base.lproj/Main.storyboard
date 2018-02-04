@@ -175,21 +175,34 @@
             </objects>
             <point key="canvasLocation" x="-362" y="242"/>
         </scene>
-        <!--Item 2-->
+        <!--報名紀錄-->
         <scene sceneID="ze9-8G-pEb">
             <objects>
-                <viewController id="JLw-Z7-Q3Y" sceneMemberID="viewController">
+                <viewController title="報名紀錄" id="JLw-Z7-Q3Y" customClass="RegistrationRecordViewController" customModule="proj002" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Exe-FU-sdH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VsW-Pp-MsS">
+                                <rect key="frame" x="0.0" y="59" width="375" height="87"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="JLw-Z7-Q3Y" id="iMe-Dy-545"/>
+                                    <outlet property="delegate" destination="JLw-Z7-Q3Y" id="QaP-QJ-znX"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="dOB-fa-baI"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="wKl-c2-sbK"/>
+                    <connections>
+                        <outlet property="RecordCategory" destination="VsW-Pp-MsS" id="tUF-wt-4wt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9iO-0y-w4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-396" y="2083"/>
+            <point key="canvasLocation" x="208.80000000000001" y="1830.1349325337333"/>
         </scene>
         <!--Item-->
         <scene sceneID="ZAU-QJ-ViJ">
