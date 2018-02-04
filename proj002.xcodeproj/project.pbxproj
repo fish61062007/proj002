@@ -14,6 +14,11 @@
 		225597572026CD7300047CC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225597552026CD7300047CC4 /* LaunchScreen.storyboard */; };
 		225597622026CD7300047CC4 /* proj002Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225597612026CD7300047CC4 /* proj002Tests.swift */; };
 		2255976D2026CD7300047CC4 /* proj002UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255976C2026CD7300047CC4 /* proj002UITests.swift */; };
+		2255977B2026CDFC00047CC4 /* EventHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255977A2026CDFC00047CC4 /* EventHome.swift */; };
+		2255977D2026CE0F00047CC4 /* ChooseSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255977C2026CE0F00047CC4 /* ChooseSchool.swift */; };
+		2255977F2026CE1F00047CC4 /* ChooseSchool01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255977E2026CE1F00047CC4 /* ChooseSchool01.swift */; };
+		225597812026CE2C00047CC4 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225597802026CE2C00047CC4 /* SignIn.swift */; };
+		225597872026CEB000047CC4 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225597862026CEB000047CC4 /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		225597682026CD7300047CC4 /* proj002UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = proj002UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2255976C2026CD7300047CC4 /* proj002UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proj002UITests.swift; sourceTree = "<group>"; };
 		2255976E2026CD7300047CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2255977A2026CDFC00047CC4 /* EventHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHome.swift; sourceTree = "<group>"; };
+		2255977C2026CE0F00047CC4 /* ChooseSchool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSchool.swift; sourceTree = "<group>"; };
+		2255977E2026CE1F00047CC4 /* ChooseSchool01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSchool01.swift; sourceTree = "<group>"; };
+		225597802026CE2C00047CC4 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		225597862026CEB000047CC4 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,11 @@
 				2255974C2026CD7300047CC4 /* AppDelegate.swift */,
 				2255974E2026CD7300047CC4 /* ViewController.swift */,
 				225597502026CD7300047CC4 /* Main.storyboard */,
+				2255977A2026CDFC00047CC4 /* EventHome.swift */,
+				2255977C2026CE0F00047CC4 /* ChooseSchool.swift */,
+				2255977E2026CE1F00047CC4 /* ChooseSchool01.swift */,
+				225597802026CE2C00047CC4 /* SignIn.swift */,
+				225597862026CEB000047CC4 /* TabBar.swift */,
 				225597532026CD7300047CC4 /* Assets.xcassets */,
 				225597552026CD7300047CC4 /* LaunchScreen.storyboard */,
 				225597582026CD7300047CC4 /* Info.plist */,
@@ -260,7 +275,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2255974F2026CD7300047CC4 /* ViewController.swift in Sources */,
+				225597812026CE2C00047CC4 /* SignIn.swift in Sources */,
+				2255977B2026CDFC00047CC4 /* EventHome.swift in Sources */,
+				2255977F2026CE1F00047CC4 /* ChooseSchool01.swift in Sources */,
+				2255977D2026CE0F00047CC4 /* ChooseSchool.swift in Sources */,
 				2255974D2026CD7300047CC4 /* AppDelegate.swift in Sources */,
+				225597872026CEB000047CC4 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
