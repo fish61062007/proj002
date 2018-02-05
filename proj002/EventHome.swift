@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
-class EventHome: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource {
+class EventHome: UIViewController, UITableViewDelegate,UITableViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource {
+  
+    
     
     @IBAction func backToEventHome(segue: UIStoryboardSegue){}
     
@@ -43,36 +47,61 @@ class EventHome: UIViewController, UITableViewDelegate, UITableViewDataSource, U
     var data12 = ["50","500","250","30","30","0","0","0","0","25","100","30","30","30","75","40","50","100","100","40","40","30","100","100","30","50","60","25","120","40","100","70","120","50","20","20","100","100","100","100","60","25","30","40","30","30","35","35","30","30","30","40","30","25","80","40","40","40","25","25","40","40","80","60","30","42","10","52","40","50","50","60","80","90","36","80"]
     var data13 = ["0","100","200","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","150"]
     var data14 = ["學術","休閒娛樂","休閒娛樂","技能","學術","學術","學術","學術","學術","技能","學術","技能","技能","技能","學術","技能","學術","學術","學術","學術","學術","技能","學術","學術","技能","技能","技能","技能","學術","技能","學術","學術","學術","學術","學術","學術","學術","藝文","學術","學術","技能","技能","技能","技能","技能","技能","技能","技能","技能","技能","技能","技能","技能","技能","學術","技能","技能","技能","技能","技能","技能","學術","學術","運動","運動","運動","藝文","運動","藝文","學術","學術","運動","學術","技能","技能","藝文"]
-
+    
     
     @IBOutlet weak var eventTableView: UITableView!
-    
-    
-    
-    
+    lazy var ref = Database.database().reference()
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        let detailText = storyboard?.instantiateViewController(withIdentifier: "EventDetail") as! EventDetail
-        detailText.titleText = eventData[indexPath.row]
-        let detail = storyboard?.instantiateViewController(withIdentifier: "EventDetailNavi")
-        present(detail!,animated: true,completion: nil)
+      
+        let detailText = storyboard?.instantiateViewController(withIdentifier: "EventDetail") as? EventDetail
+        detailText?.titleText = eventData[indexPath.row]
+        
+        present(detailText!,animated: true,completion: nil)
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return eventData.count
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell:UITableViewCell? = tableView.dequeueReusableCell(withIdentifier: "MyCell")
+        var cell:MyCell? = tableView.dequeueReusableCell(withIdentifier: "MyCell") as? MyCell
         if cell == nil {
-            cell = UITableViewCell(style: .default,reuseIdentifier: "MyCell")
+            cell = UITableViewCell(style: .default,reuseIdentifier: "MyCell") as? MyCell
         }
-        cell?.textLabel?.text = eventData[indexPath.row]
+        cell?.eventName.text = eventData[indexPath.row]
         
+        self.ref.child("Name").setValue(eventData)
+        self.ref.child("Holder").setValue(data2)
+        
+        self.ref.child("Contact person").setValue(data3)
+        
+        self.ref.child("Phone").setValue(data4)
+        
+        self.ref.child("Lecturer").setValue(data5)
+        
+        self.ref.child("Location").setValue(data6)
+        
+        self.ref.child("EventBegin").setValue(data8)
+        
+        self.ref.child("EventEnd").setValue(data9)
+        
+        self.ref.child("SignUpBegin").setValue(data10)
+        
+        self.ref.child("SignUpEnd").setValue(data11)
+        
+        self.ref.child("Quota").setValue(data12)
+        
+        self.ref.child("Cost").setValue(data13)
+        
+        self.ref.child("Category").setValue(data14)
+        
+
         return cell!
     }
-
-    override func viewDidLoad() {
+    
+ 
+    
+       override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.

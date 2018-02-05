@@ -100,11 +100,11 @@ class SignIn: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(forName: NSNotification.Name.UIKeyboardDidShow, object: nil, queue: nil) { (noti:Notification) in
-            print("\(noti.userInfo)")
+            print("\(String(describing: noti.userInfo))")
         }
         
         NotificationCenter.default.addObserver(forName: NSNotification.Name.UIKeyboardDidHide, object: nil, queue: nil) { (noti:Notification) in
-            print("\(noti.userInfo)")
+            print("\(String(describing: noti.userInfo))")
         }
         
         // Do any additional setup after loading the view.
